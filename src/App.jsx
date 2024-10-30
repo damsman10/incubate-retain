@@ -1,7 +1,7 @@
 import Header from './components/sticky/Header.jsx'
 import Footer from './components/sticky/Footer.jsx'
 import { BrowserRouter as Router } from 'react-router-dom';
-import './app.css';
+import './App.css';
 import Home from './pages/Home.jsx';
 
 const App = () => {
