@@ -1,4 +1,4 @@
-import logo from '../../assets/logo.png';
+import logo from '../../assets/headerlogo.svg';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import hamburger from '../../assets/hamburger.svg';
@@ -18,22 +18,22 @@ const Header = () => {
             <Link to="/" className='hover:border-b-2 border-gray-400'>Tech Sales</Link>
           </li>
           <li>
-            <Link to="/finmag" className='hover:border-b-2 border-gray-400'>Financial Management</Link>
+            <Link to="program/financial-management" className='hover:border-b-2 border-gray-400'>Financial Management</Link>
           </li>
           <li>
-            <Link to="/proddes" className='hover:border-b-2 border-gray-400'>Product Design</Link>
+            <Link to="program/product-design" className='hover:border-b-2 border-gray-400'>Product Design</Link>
           </li>
           <li>
-            <Link to="/prodmark" className='hover:border-b-2 border-gray-400'>Product Marketing</Link>
+            <Link to="program/product-marketing" className='hover:border-b-2 border-gray-400'>Product Marketing</Link>
           </li>
           <li>
-            <Link to="/custsucc" className='hover:border-b-2 border-gray-400'>Customer Success</Link>
+            <Link to="program/customer-success" className='hover:border-b-2 border-gray-400'>Customer Success</Link>
           </li>
           <li>
-            <Link to="/graddes" className='hover:border-b-2 border-gray-400'>Graphics Design</Link>
+            <Link to="program/graphic-design" className='hover:border-b-2 border-gray-400'>Graphics Design</Link>
           </li>
           <li>
-            <Link to="/faq" className='hover:border-b-2 border-gray-400'>FAQ</Link>
+            <Link to=".faq" className='hover:border-b-2 border-gray-400'>FAQ</Link>
           </li>
         </ul>
       </nav>

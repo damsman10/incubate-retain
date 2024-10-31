@@ -1,47 +1,22 @@
-import Header from './components/sticky/Header.jsx'
-import Footer from './components/sticky/Footer.jsx'
-import { BrowserRouter as Router } from 'react-router-dom';
-import './App.css';
-import Home from './pages/Home.jsx';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Header from './components/sticky/Header';
+import Footer from './components/sticky/Footer';
+import Home from './pages/Home';
+import NotFound from './pages/NotFound';
+import Program from './pages/Program';
 
 const App = () => {
   return (
-    <div>
-      <Router>
-        <Header />
-
-        <Home />
-
-        <Footer />
-      </Router>
-    </div>
-
-
-// import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-
-// const App = () => {
-//   return (
-//     <Router>
-//       <Header />
-//       <Switch>
-//         <Route path="/" exact>
-//           {/* Your Home component */}
-//         </Route>
-//         <Route path="/about">
-//           {/* Your About component */}
-//         </Route>
-//         <Route path="/services">
-//           {/* Your Services component */}
-//         </Route>
-//         <Route path="/contact">
-//           {/* Your Contact component */}
-//         </Route>
-//       </Switch>
-//     </Router>
-//   );
-// }
-
-  )
+    <Router>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/program/:programSlug" element={<Program />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+      <Footer />
+    </Router>
+  );
 }
 
-export default App
+export default App;

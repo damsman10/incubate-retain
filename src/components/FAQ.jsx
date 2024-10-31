@@ -3,7 +3,7 @@ import Accordion from "./Accordion"
 
 const FAQ = () => {
   return (
-    <div className="w-full m-auto mt-20">
+    <div className="faq w-full m-auto mt-20">
         <h1 className="font-nexa font-extrabold text-[1.5rem] md:text-[3.9rem] mb-12 leading-[1.6rem] md:leading-[3.9rem] text-black pl-2">Frequently Asked Questions</h1>
 
         <div className="p-4">
