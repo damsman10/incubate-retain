@@ -3,7 +3,7 @@ import Header from './components/sticky/Header';
 import Footer from './components/sticky/Footer';
 import Home from './pages/Home';
 import NotFound from './pages/NotFound';
-import Program from './pages/Program';
+import Program from './pages/Course';
 
 const App = () => {
   return (
