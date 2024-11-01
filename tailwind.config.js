@@ -6,6 +6,11 @@ export default {
   ],
   theme: {
     extend: {
+      boxShadow: {
+        'bottom': '0 4px 4px 0 rgba(0, 0, 0, 0.25)',
+        'inner-custom': 'inset 0 4px 6px rgba(214, 227, 255, 1)',
+      },
+      
       colors: {
         deepBlue: '#001B3E',
       },

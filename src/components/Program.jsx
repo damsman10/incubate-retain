@@ -10,7 +10,7 @@ const Program = ({ img, name, details }) => {
 
       <div className="bottom flex flex-col md:flex-row justify-between mt-2 w-[90%] m-auto">
         <div className="left flex-1">
-          <div className="ProgramName w-full h-[4.29rem] md:w-[23rem] md:h-[5rem] rounded-[1.25rem] bg-deepBlue text-center mt-6 border border-black flex items-center justify-center">
+          <div className="ProgramName shadow-inner-custom w-full h-[4.29rem] md:w-[23rem] md:h-[5rem] rounded-[1.25rem] bg-deepBlue text-center mt-6 border border-black flex items-center justify-center">
             <h1 className={`text-[1.8rem] md:text-[2rem] font-600 leading-[2.25rem] font-clash text-white`}>
               {name}
             </h1>
