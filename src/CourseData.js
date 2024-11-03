@@ -9,7 +9,7 @@ const ProgramData = [
     {
         name: "Tech Sales",
         slug: "tech-sales",
-        description: "This is some random description",
+        aboutcourse: "<p>In this Tech Sales course, you will explore the principles of user-centered design, learning to identify and address real-world problems through innovative solutions. You will engage in hands-on projects that encourage creativity, collaboration, and critical thinking, allowing you to develop practical skills in sketching, prototyping, and user testing.</p> <br /> <p>The course will cover essential topics such as design thinking, materials selection, and sustainable practices, equipping you with the knowledge to create impactful products.</p>",
         takeaway: "The key takeaway from this Tech Sales course will be the ability to effectively integrate user-centered design principles with practical problem-solving skills. You’ll gain hands-on experience in prototyping, collaboration, and iterative testing enabling you to create innovative solutions that meet real-world needs. Additionally, you'll build a strong portfolio that demonstrates your design thinking process and technical abilities",
         image: sales
     },

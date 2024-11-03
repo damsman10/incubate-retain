@@ -8,38 +8,86 @@ const Header = () => {
 
   const toggleMenu = () => setIsOpen(!isOpen);
 
-  
+  const handleLinkClick = () => {
+    setIsOpen(false); // Close the menu when a link is clicked
+    window.scrollTo(0, 0); // Scroll to the top of the page
+  };
 
   return (
     <div className={`flex flex-row justify-between items-center gap-4 h-[96px] py-2 px-4`}>
-      <img src={logo} alt="logo" className='h-10 w-auto' />
+      
+      <Link to="/" className=''>
+        <img src={logo} alt="logo" className='h-10 w-auto' />
+      </Link>
 
-      <nav className={`w-full md:w-auto ${isOpen ? 'block' : 'hidden'} md:flex md:items-center md:bg-transparent bg-white md:relative absolute left-0 top-[96px] md:top-auto transition-all duration-300`}>
-        <ul className='flex flex-col md:flex-row gap-4 p-4 md:p-0'>
+      <nav className={`w-full md:w-auto ${isOpen ? 'fixed inset-0 top-[96px] bg-white z-50 py-4 border-b border-gray-300' : 'hidden'} md:flex md:items-center md:bg-transparent md:relative`}>
+        <ul className='flex flex-col md:flex-row gap-8 p-4 md:p-0'>
           <li>
-            <Link to="/" className='hover:border-b-2 border-gray-400'>Tech Sales</Link>
+            <Link 
+              to="program/tech-sales" 
+              className='hover:text-blue-500 active:text-blue-700'
+              onClick={handleLinkClick}
+            >
+              Tech Sales
+            </Link>
           </li>
           <li>
-            <Link to="program/financial-management" className='hover:border-b-2 border-gray-400'>Financial Management</Link>
+            <Link 
+              to="program/financial-management" 
+              className='hover:text-blue-500 active:text-blue-700'
+              onClick={handleLinkClick}
+            >
+              Financial Management
+            </Link>
           </li>
           <li>
-            <Link to="program/product-design" className='hover:border-b-2 border-gray-400'>Product Design</Link>
+            <Link 
+              to="program/product-design" 
+              className='hover:text-blue-500 active:text-blue-700'
+              onClick={handleLinkClick}
+            >
+              Product Design
+            </Link>
           </li>
           <li>
-            <Link to="program/product-marketing" className='hover:border-b-2 border-gray-400'>Product Marketing</Link>
+            <Link 
+              to="program/product-marketing" 
+              className='hover:text-blue-500 active:text-blue-700'
+              onClick={handleLinkClick}
+            >
+              Product Marketing
+            </Link>
           </li>
           <li>
-            <Link to="program/customer-success" className='hover:border-b-2 border-gray-400'>Customer Success</Link>
+            <Link 
+              to="program/customer-success" 
+              className='hover:text-blue-500 active:text-blue-700'
+              onClick={handleLinkClick}
+            >
+              Customer Success
+            </Link>
           </li>
           <li>
-            <Link to="program/graphic-design" className='hover:border-b-2 border-gray-400'>Graphics Design</Link>
+            <Link 
+              to="program/graphic-design" 
+              className='hover:text-blue-500 active:text-blue-700'
+              onClick={handleLinkClick}
+            >
+              Graphics Design
+            </Link>
           </li>
           <li>
-            <Link to=".faq" className='hover:border-b-2 border-gray-400'>FAQ</Link>
+            <Link 
+              to=".faq" 
+              className='hover:text-blue-500 active:text-blue-700'
+              onClick={handleLinkClick}
+            >
+              FAQ
+            </Link>
           </li>
         </ul>
       </nav>
-
+      
       <button className="hidden md:block h-[3.25rem] w-[8.25rem] rounded-full py-[0.875rem] px-[1.25rem] bg-deepBlue hover:bg-deepBlue/75 text-white cursor-pointer font-nexa font-bold leading-[24px]">
         Get Started
       </button>

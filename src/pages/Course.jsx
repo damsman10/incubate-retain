@@ -2,6 +2,7 @@ import { useParams } from 'react-router-dom'
 import CourseData from '../CourseData'
 import Aside from '../components/Aside';
 import CourseOverview from '../components/CourseOverview';
+import Form from '../components/Form';
 
 
 const Program = () => {
@@ -44,7 +45,7 @@ const Program = () => {
 
 
       <div className="bottom form">
-
+        <Form />
       </div>
     </div>
   )
