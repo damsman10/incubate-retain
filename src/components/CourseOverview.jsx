@@ -17,7 +17,7 @@ const CourseOverview = (props) => {
           className={`tab text-[24px] cursor-pointer leading-[36px] font-nexa pb-2 ${activeTab === 'review' ? 'border-b-2 border-black' : ''}`}
           onClick={() => setActiveTab('review')}
         >
-          Review
+          Reviews
         </button>
       </div>
 

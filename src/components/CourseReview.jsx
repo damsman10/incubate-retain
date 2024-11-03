@@ -4,7 +4,7 @@ import halfstar from '../assets/halfstar.svg'
 const CourseReview = () => {
   return (
     <div className="mt-4">
-            <h2 className="text-[30px] font-700 font-nexa leading-[37.5px] mb-4">Course Reviews</h2>
+            {/* <h2 className="text-[30px] font-700 font-nexa leading-[37.5px] mb-4">Course Reviews</h2> */}
             <div className="space-y-6">
               <div className="review p-4 border rounded-lg shadow-md bg-white">
                 <div className="flex items-center mb-2">

@@ -1,4 +1,5 @@
 import girl from '../assets/girl.png';
+import girlpic from '../assets/girlpic.png';
 import Button from './Button';
 
 const LearnGrowEarn = () => {
@@ -25,8 +26,9 @@ const LearnGrowEarn = () => {
         />
       </div>
 
-      <div className="right w-full md:w-[50%] object-cover">
-        <img src={girl} alt="" className='w-full h-auto md:h-[750px]' />
+      <div className="right w-full md:w-[50%] h-auto min-h-[23.44rem] md:min-h-[48.88rem] rounded-bl-[14.49rem] md:rounded-bl-[31.25rem] bg-cover bg-center" style={{backgroundImage: `url(${girlpic})`}}>
+        
+        
       </div>
     </div>
   );
