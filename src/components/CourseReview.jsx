@@ -8,7 +8,7 @@ const CourseReview = () => {
             <div className="space-y-6">
               <div className="review p-4 border rounded-lg shadow-md bg-white">
                 <div className="flex items-center mb-2">
-                  <h3 className="font-nexa text-[20px] mr-2">John Doe</h3>
+                  <h3 className="font-nexa text-[20px] mr-2 ">John Doe</h3>
                   <div className="flex items-center mb-2">
                     <img src={fullstar} alt="" />
                     <img src={fullstar} alt="" />
@@ -18,7 +18,7 @@ const CourseReview = () => {
                     <span className="ml-2">4.5</span>
                 </div>
                 </div>
-                <p className="leading-[30px]">"This course was fantastic! I learned so much about product design and the hands-on projects really helped me apply what I learned."</p>
+                <p className="md:leading-[30px] font-nexa text-[14px] leading-[21px] md:text-[20px]">"This course was fantastic! I learned so much about product design and the hands-on projects really helped me apply what I learned."</p>
               </div>
               <div className="review p-4 border rounded-lg shadow-md bg-white">
                 <div className="flex items-center mb-2">
@@ -32,7 +32,7 @@ const CourseReview = () => {
                     <span className="ml-2">5.0</span>
                     </div>
                 </div>
-                <p className="leading-[30px]">"Great course with a lot of valuable content. The instructor was knowledgeable and supportive throughout the process."</p>
+                <p className="md:leading-[30px] font-nexa text-[14px] leading-[21px] md:text-[20px]">"Great course with a lot of valuable content. The instructor was knowledgeable and supportive throughout the process."</p>
               </div>
               <div className="review p-4 border rounded-lg shadow-md bg-white">
                 <div className="flex items-center mb-2">
@@ -46,7 +46,7 @@ const CourseReview = () => {
                     <span className="ml-2">5.0</span>
                   </div>
                 </div>
-                <p className="leading-[30px]">"I really enjoyed the collaborative projects and the focus on real-world applications. Highly recommend!"</p>
+                <p className="md:leading-[30px] font-nexa text-[14px] leading-[21px] md:text-[20px]">"I really enjoyed the collaborative projects and the focus on real-world applications. Highly recommend!"</p>
               </div>
               <div className="review p-4 border rounded-lg shadow-md bg-white">
                 <div className="flex items-center mb-2">
@@ -60,7 +60,7 @@ const CourseReview = () => {
                     <span className="ml-2">5.0</span>
                   </div>
                 </div>
-                <p className="leading-[30px]">"An excellent course that helped me gain confidence in my design skills. I appreciated the feedback from my peers."</p>
+                <p className="md:leading-[30px] font-nexa text-[14px] leading-[21px] md:text-[20px]">"An excellent course that helped me gain confidence in my design skills. I appreciated the feedback from my peers."</p>
               </div>
             </div>
           </div>

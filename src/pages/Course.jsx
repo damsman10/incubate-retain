@@ -16,17 +16,17 @@ const Program = () => {
 
   return (
     <div>
-      <div className="top m-auto">
-        <div className='m-12'>
-          <div className="ProgramName mb-[50px] w-full h-[4.29rem] md:w-[23rem] md:h-[5rem] rounded-[1.25rem] bg-deepBlue text-center border border-black flex items-center justify-center">
-            <h1 className={`text-[1.8rem] md:text-[2rem] font-600 leading-[2.25rem] font-clash text-white`}>
+      {/* <div className="top border-4"> */}
+        <div className='mx-[14.5px] m-0 md:m-12 border-2'>
+          <div className="ProgramName mb-[25px] md:mb-[50px] w-[9.16rem] h-[2.23rem] md:w-[23rem] md:h-[5rem] rounded-[8.91px] bg-deepBlue text-center border border-black flex items-center justify-center shadow-inner-custom">
+            <h1 className={`text-[1.02rem] leading-[1.02rem] md:text-[2rem] font-600 md:leading-[2.25rem] font-clash text-white`}>
               {program.name}
             </h1>
           </div>
 
           <div className="sides flex flex-col md:flex-row justify-between gap-[50px]">
-            <div className="main w-[63%] ">
-              <img src= {program.image} alt="" className='object-cover h-[27.8rem]'/>
+            <div className="main m-auto w-full md:w-[63%] ">
+              <img src= {program.image} alt="" className='object-cover min-h-[12.39rem] md:min-h-[27.8rem]'/>
 
               <CourseOverview
               takeaway = {program.takeaway}
@@ -38,7 +38,7 @@ const Program = () => {
             
           </div>
         </div>
-      </div>
+      {/* </div> */}
 
 
       <div className="bottom form">

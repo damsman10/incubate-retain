@@ -6,7 +6,7 @@ const CourseOverview = (props) => {
 
   return (
     <div className="mt-8">
-      <div className="tabs w-[20.94rem] flex justify-between mb-4 border-gray-300">
+      <div className="tabs w-[19.7rem] md:w-[20.94rem] flex justify-between mb-4">
         <button
           className={`tab text-[24px] cursor-pointer leading-[36px] font-nexa pb-2 ${activeTab === 'overview' ? 'border-b-2 border-black' : ''}`}
           onClick={() => setActiveTab('overview')}
@@ -24,13 +24,13 @@ const CourseOverview = (props) => {
       <div>
         {activeTab === 'overview' && (
           <div className="mt-4">
-            <h2 className="text-[30px] font-700 font-nexa leading-[37.5px] mb-2">About Course</h2>
-            <p dangerouslySetInnerHTML={{ __html: props.aboutcourse }} className="leading-[30px] font-nexa text-[20px]" /> 
+            <h2 className="text-[20px] leading-[25px] md:text-[30px] font-bold font-nexa md:leading-[37.5px] mb-2">About Course</h2>
+            <p dangerouslySetInnerHTML={{ __html: props.aboutcourse }} className="md:leading-[30px] font-nexa text-[14px] leading-[21px] md:text-[20px]" /> 
 
             <div className="takeaway mt-4">
-                <h2 className="text-[30px] font-700 font-nexa leading-[37.5px] mb-2">Take-Away</h2>
+                <h2 className="text-[20px] leading-[25px] md:text-[30px] font-bold font-nexa md:leading-[37.5px] mb-2">Take-Away</h2>
                 
-                <p dangerouslySetInnerHTML={{ __html: props.takeaway }} className="font-nexa text-[20px] leading-[30px]"
+                <p dangerouslySetInnerHTML={{ __html: props.takeaway }} className="md:leading-[30px] font-nexa text-[14px] leading-[21px] md:text-[20px]"
                 />
 
                 
