@@ -17,7 +17,7 @@ const Program = ({ img, name, details }) => {
           </div>
 
           <div className='ProgramDetails w-full max-w-[36.3rem] mt-4'>
-            <p className="font-nexa font-800 text-[1.04rem] md:text-[1.75rem] leading-[1.39rem] md:leading-[2.1rem]">
+            <p className="font-nexa font-800 text-[1.04rem] md:text-[1.75rem] leading-[1.39rem] md:leading-[2.1rem] text-[#1A2F4E] font-[600]">
               {details}
             </p>
           </div>
