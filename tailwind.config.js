@@ -9,6 +9,7 @@ export default {
       boxShadow: {
         'bottom': '0 4px 4px 0 rgba(0, 0, 0, 0.25)',
         'inner-custom': 'inset 0 4px 6px rgba(214, 227, 255, 1)',
+        'inner-custom2': '0px 4px 5px rgba(72, 132, 223, 0.7)',
       },
       
       colors: {

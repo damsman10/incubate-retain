@@ -1,4 +1,3 @@
-import girl from '../assets/girl.png';
 import girlpic from '../assets/girlpic.png';
 import Button from './Button';
 

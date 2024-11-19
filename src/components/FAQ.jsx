@@ -3,10 +3,10 @@ import Accordion from "./Accordion"
 
 const FAQ = () => {
   return (
-    <div className="faq w-full m-auto mt-20">
-        <h1 className="font-nexa font-extrabold text-[1.5rem] md:text-[3.2rem] mb-12 leading-[1.6rem] md:leading-[3.9rem] text-[#1A2F4E] pl-2">Frequently Asked Questions</h1>
+    <div id="faq" className="faq w-[90%] m-auto mt-20">
+        <h1 className="font-nexa font-extrabold text-[1.5rem] md:text-[3.2rem] mb-12 leading-[1.6rem] md:leading-[3.9rem] text-[#1A2F4E]">Frequently Asked Questions</h1>
 
-        <div className="p-4">
+        <div className="py-4">
             <Accordion
                 title="What is the RETAIN Program?"
                 answer="RETAIN [REvenue TAlents INcubation] is a unique program designed to address talent gaps in the Revenue and Growth fields. It’s a training platform specially created for beginners and individuals looking to switch career paths in areas such as Customer Success, Financial Management, Product Marketing and Tech Sales. RETAIN is dedicated to building top talents and empowering passionate individuals to contribute meaningfully in their chosen fields. Additionally, the program offers a 6-month paid internship to help participants gain real-world experience while developing their skills."

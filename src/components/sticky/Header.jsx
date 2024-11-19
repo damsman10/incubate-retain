@@ -78,7 +78,7 @@ const Header = () => {
           </li>
           <li>
             <Link 
-              to=".faq" 
+              to="faq" 
               className='hover:text-blue-500 active:text-blue-700'
               onClick={handleLinkClick}
             >
