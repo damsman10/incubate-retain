@@ -227,7 +227,7 @@ const Form = () => {
 
           <button
             type="submit"
-            className="w-full h-[58px] font-nexa text-[30px] p-2 bg-[#001B3E] border-[1px] border-[#415F91] text-white rounded-[10px] font-bold hover:bg-blue-700"
+            className="w-full h-[58px] font-nexa text-[14px] md:text-[30px] p-2 bg-[#001B3E] border-[1px] border-[#415F91] text-white rounded-[10px] font-bold hover:bg-blue-700"
           >
             Enroll course
           </button>
