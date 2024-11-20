@@ -63,7 +63,7 @@ const Aside = () => {
 
               <div className="bottom course-includes shadow-bottom h-[25.4rem] bg-[#F9F9FF] rounded-[10px] pt-[20px] pl-[30px]">
                 <div className="inner w-[22.6rem] h-[22.8rem] flex flex-col gap-[35px]">
-                  <h1 className='font-nexa font-700 text-[30px] leading-[37.5px]'>This course includes</h1>
+                  <h1 className='font-nexa font-700 text-[23.24px] md:text-[30px] leading-[37.5px]'>This course includes</h1>
                 
                   <div className="materials flex flex-col gap-[18px]">
                     <div className='flex justify-start items-center gap-[18px]'>
@@ -87,9 +87,9 @@ const Aside = () => {
                   </div>
                 
                   <div className="list flex flex-col gap-[14px]">
-                    <p className='font-nexa text-[20px] leading-[30px]'>Guaranteed paid Internship</p>
-                    <p className='font-nexa text-[20px] leading-[30px]'>Capstone Projects</p>
-                    <p className='font-nexa text-[20px] leading-[30px]'>Access to real mentors</p>
+                    <p className='font-nexa text-[15.5px] md:text-[20px] leading-[30px]'>Guaranteed paid Internship</p>
+                    <p className='font-nexa text-[15.5px] md:text-[20px] leading-[30px]'>Capstone Projects</p>
+                    <p className='font-nexa text-[15.5px] md:text-[20px] leading-[30px]'>Access to real mentors</p>
                   </div>
                 </div>
 

@@ -7,9 +7,20 @@
     margin: 0;
 }
 
+body {
+    overflow-x: hidden;
+  }
+
 .custom-checkbox {
     width: 29.3px; 
     height: 29.3px;
     border-radius: 8.78px;
     border: 1px solid #D0D5DD;
   }
+
+  @media screen and (max-width: 500px) {
+    .custom-checkbox {
+        width: 14.3px;
+        height: 14.3px;
+    }
+}

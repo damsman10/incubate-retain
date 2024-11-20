@@ -29,17 +29,18 @@ const Form = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log('Form submitted:', formData);
+
   };
 
   return (
-    <div className="p-4">
-      <div className="max-w-screen-md mx-auto mt-10 p-6 bg-white rounded-md shadow-md">
-        <h2 className="text-2xl sm:text-4xl font-semibold mb-6 text-center">Enter your details</h2>
+    <div className="frame">
+      <div className="w-[85%] md:w-[43.88rem] mx-auto mt-10 py-6 bg-white rounded-md">
+        <h2 className="text-[21.5px] sm:text-[43.9px] font-[600] font-raleway mb-6 text-center">Enter your details</h2>
 
-        <form onSubmit={handleSubmit} className="space-y-6">
-          <div className="flex flex-col sm:flex-row gap-4">
+        <form onSubmit={handleSubmit} className="space-y-4">
+          <div className="flex flex-col md:flex-row gap-4">
             <div className="flex-1">
-              <label htmlFor="firstName" className="block mb-2 text-lg font-medium text-black">First Name</label>
+              <label htmlFor="firstName" className="block mb-2 text-[14px] md:text-[20.5px] font-inter font-medium text-black">First name</label>
               <input
                 type="text"
                 id="firstName"
@@ -47,11 +48,11 @@ const Form = () => {
                 value={formData.firstName}
                 onChange={handleChange}
                 placeholder="First name"
-                className="w-full py-3 px-4 border border-gray-300 rounded-md bg-white text-gray-800 text-base"
+                className="w-full py-[12px] px-[16px] md:py-[17.56px] md:px-[23.41px] border-[1.46px] border-black rounded-[8.78px] bg-white text-[#434343] font-inter text-[16px] md:text-[16px]"
               />
             </div>
             <div className="flex-1">
-              <label htmlFor="lastName" className="block mb-2 text-lg font-medium text-black">Last Name</label>
+              <label htmlFor="lastName" className="block mb-2 text-[14px] md:text-[20.5px] font-inter font-medium text-black">Last name</label>
               <input
                 type="text"
                 id="lastName"
@@ -59,13 +60,13 @@ const Form = () => {
                 value={formData.lastName}
                 onChange={handleChange}
                 placeholder="Last name"
-                className="w-full py-3 px-4 border border-gray-300 rounded-md bg-white text-gray-800 text-base"
+                className="w-full py-[12px] px-[16px] md:py-[17.56px] md:px-[23.41px] border-[1.46px] border-black rounded-[8.78px] bg-white text-[#434343] font-inter text-[16px] md:text-[23.41px]"
               />
             </div>
           </div>
 
           <div>
-            <label htmlFor="email" className="block mb-2 text-lg font-medium text-black">Email</label>
+            <label htmlFor="email" className="block mb-2 text-[14px] md:text-[20.5px] font-inter font-medium text-black">Email</label>
             <input
               type="email"
               id="email"
@@ -73,19 +74,19 @@ const Form = () => {
               value={formData.email}
               onChange={handleChange}
               placeholder="Email"
-              className="w-full py-3 px-4 border border-gray-300 rounded-md bg-white text-gray-800 text-base"
+              className="w-full py-[12px] px-[16px] md:py-[17.56px] md:px-[23.41px] border-[1.46px] border-black rounded-[8.78px] bg-white text-[#434343] font-inter text-[16px] md:text-[23.41px]"
             />
           </div>
 
           <div>
-            <label htmlFor="phoneNumber" className="block mb-2 text-lg font-medium text-black">Phone Number</label>
-            <div className="flex items-center border border-gray-300 rounded-md bg-white">
+            <label htmlFor="phoneNumber" className="block mb-2 text-[14px] md:text-[20.5px] font-inter font-medium text-black">Phone Number</label>
+            <div className="py-[5px] px-[14px] md:px-[23.41px] border-[1.46px] border-black rounded-[8.78px] bg-white flex">
               <select
                 id="countryCode"
                 name="countryCode"
                 value={formData.countryCode}
                 onChange={handleChange}
-                className="py-3 px-4 bg-white text-gray-800 border-r border-gray-300 rounded-l-md"
+                className="rounded-[8.78px] bg-white rounded-l-md text-[#434343] font-inter text-[16px] md:text-[23.41px]"
               >
                 <option value="NGN">NGN</option>
               </select>
@@ -96,32 +97,33 @@ const Form = () => {
                 value={formData.phoneNumber}
                 onChange={handleChange}
                 placeholder="+234 (555) 000-0000"
-                className="flex-1 py-3 px-4 bg-white text-gray-800 rounded-r-md focus:outline-none"
+                className="flex-1 py-2 ml-4 bg-white text-[#434343] font-inter text-[16px] md:text-[23.41px] rounded-r-md focus:outline-none"
               />
             </div>
           </div>
 
-          <div className="flex flex-col sm:flex-row gap-4">
+
+          <div className="flex flex-col md:flex-row gap-4">
             <div className="flex-1">
-              <label htmlFor="country" className="block mb-2 text-lg font-medium text-black">Country</label>
+              <label htmlFor="country" className="block mb-2 text-[14px] md:text-[20.5px] font-inter font-medium text-black">Country</label>
               <select
                 id="country"
                 name="country"
                 value={formData.country}
                 onChange={handleChange}
-                className="w-full py-3 px-4 border border-gray-300 rounded-md bg-white text-gray-800"
+                className="w-full py-[12px] px-[16px] md:py-[17.56px] md:px-[23.41px] border-[1.46px] border-black rounded-[8.78px] bg-white text-[#434343] font-inter text-[16px] md:text-[23.41px]"
               >
                 <option value="">Select Country</option>
               </select>
             </div>
             <div className="flex-1">
-              <label htmlFor="gender" className="block mb-2 text-lg font-medium text-black">Gender</label>
+              <label htmlFor="gender" className="block mb-2 text-[14px] md:text-[20.5px] font-inter font-medium text-black">Gender</label>
               <select
                 id="gender"
                 name="gender"
                 value={formData.gender}
                 onChange={handleChange}
-                className="w-full py-3 px-4 border border-gray-300 rounded-md bg-white text-gray-800"
+                className="w-full py-[12px] px-[16px] md:py-[17.56px] md:px-[23.41px] border-[1.46px] border-black rounded-[8.78px] bg-white text-[#434343] font-inter text-[16px] md:text-[23.41px]"
               >
                 <option value="">Gender</option>
                 <option value="male">Male</option>
@@ -130,27 +132,27 @@ const Form = () => {
             </div>
           </div>
 
-          <div className="flex flex-col sm:flex-row gap-4">
+          <div className="flex flex-col md:flex-row gap-4">
             <div className="flex-1">
-              <label htmlFor="experienceLevel" className="block mb-2 text-lg font-medium text-black">Experience Level</label>
+              <label htmlFor="experienceLevel" className="block mb-2 text-[14px] md:text-[20.5px] font-inter font-medium text-black">Experience Level</label>
               <select
                 id="experienceLevel"
                 name="experienceLevel"
                 value={formData.experienceLevel}
                 onChange={handleChange}
-                className="w-full py-3 px-4 border border-gray-300 rounded-md bg-white text-gray-800"
+                className="w-full py-[12px] px-[16px] md:py-[17.56px] md:px-[23.41px] border-[1.46px] border-black rounded-[8.78px] bg-white text-[#434343] font-inter text-[16px] md:text-[23.41px]"
               >
                 <option value="">Experience level</option>
               </select>
             </div>
             <div className="flex-1">
-              <label htmlFor="employmentStatus" className="block mb-2 text-lg font-medium text-black">Employment Status</label>
+              <label htmlFor="employmentStatus" className="block mb-2 text-[14px] md:text-[20.5px] font-inter font-medium text-black">Employment Status</label>
               <select
                 id="employmentStatus"
                 name="employmentStatus"
                 value={formData.employmentStatus}
                 onChange={handleChange}
-                className="w-full py-3 px-4 border border-gray-300 rounded-md bg-white text-gray-800"
+                className="w-full py-[12px] px-[16px] md:py-[17.56px] md:px-[23.41px] border-[1.46px] border-black rounded-[8.78px] bg-white text-[#434343] font-inter text-[16px] md:text-[23.41px]"
               >
                 <option value="">Employment status</option>
               </select>
@@ -158,28 +160,54 @@ const Form = () => {
           </div>
 
           <div>
-            <label htmlFor="educationLevel" className="block mb-2 text-lg font-medium text-black">Education Level</label>
+            <label htmlFor="educationLevel" className="block mb-2 text-[14px] md:text-[20.5px] font-inter font-medium text-black">Education Level</label>
             <select
               id="educationLevel"
               name="educationLevel"
               value={formData.educationLevel}
               onChange={handleChange}
-              className="w-full py-3 px-4 border border-gray-300 rounded-md bg-white text-gray-800"
+              className="w-full py-[12px] px-[16px] md:py-[17.56px] md:px-[23.41px] border-[1.46px] border-black rounded-[8.78px] bg-white text-[#434343] font-inter text-[16px] md:text-[23.41px]"
             >
               <option value="">Education level</option>
             </select>
           </div>
 
           <div>
-            <label htmlFor="learningPath" className="block mb-2 text-lg font-medium text-black">Learning Path</label>
+            <label htmlFor="learningPath" className="block mb-2 text-[14px] md:text-[20.5px] font-inter font-medium text-black">Learning Path</label>
             <select
               id="learningPath"
               name="learningPath"
               value={formData.learningPath}
               onChange={handleChange}
-              className="w-full py-3 px-4 border border-gray-300 rounded-md bg-white text-gray-800"
+              className="w-full py-[12px] px-[16px] md:py-[17.56px] md:px-[23.41px] border-[1.46px] border-black rounded-[8.78px] bg-white text-[#434343] font-inter text-[16px] md:text-[23.41px]"
             >
               <option value="">Select learning path</option>
+            </select>
+          </div>
+
+          <div>
+            <label htmlFor="programStructure" className="block mb-2 text-[14px] md:text-[20.5px] font-inter font-medium text-black">Program Structure</label>
+            <select
+              id="programStructure"
+              name="programStructure"
+              value={formData.programStructure}
+              onChange={handleChange}
+              className="w-full py-[12px] px-[16px] md:py-[17.56px] md:px-[23.41px] border-[1.46px] border-black rounded-[8.78px] bg-white text-[#434343] font-inter text-[16px] md:text-[23.41px]"
+            >
+              <option value="">Preferred program structure</option>
+            </select>
+          </div>
+
+          <div>
+            <label htmlFor="referralSource" className="block mb-2 text-[14px] md:text-[20.5px] font-inter font-medium text-black">How Did You Hear About Us?</label>
+            <select
+              id="referralSource"
+              name="referralSource"
+              value={formData.referralSource}
+              onChange={handleChange}
+              className="w-full py-[12px] px-[16px] md:py-[17.56px] md:px-[23.41px] border-[1.46px] border-black rounded-[8.78px] bg-white text-[#434343] font-inter text-[16px] md:text-[23.41px]"
+            >
+              <option value="">Select option</option>
             </select>
           </div>
 
@@ -190,18 +218,18 @@ const Form = () => {
               name="marketingConsent"
               checked={formData.marketingConsent}
               onChange={handleChange}
-              className="mr-2"
+              className="mr-2 bg-white custom-checkbox"
             />
-            <label htmlFor="marketingConsent" className="text-gray-800">
+            <label htmlFor="marketingConsent" className="text-black py-2 md:py-6 text-[12.47px] leading-[15.47px] md:text-[20px] md:leading-[20px] font-inter">
               I accept communication and marketing emails from Salesplat
             </label>
           </div>
 
           <button
             type="submit"
-            className="w-full py-3 bg-blue-800 text-white text-lg font-bold rounded-md hover:bg-blue-700"
+            className="w-full h-[58px] font-nexa text-[30px] p-2 bg-[#001B3E] border-[1px] border-[#415F91] text-white rounded-[10px] font-bold hover:bg-blue-700"
           >
-            Enroll Course
+            Enroll course
           </button>
         </form>
       </div>
