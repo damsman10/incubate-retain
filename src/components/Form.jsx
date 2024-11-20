@@ -48,7 +48,7 @@ const Form = () => {
                 value={formData.firstName}
                 onChange={handleChange}
                 placeholder="First name"
-                className="w-full py-[12px] px-[16px] md:py-[17.56px] md:px-[23.41px] border-[1.46px] border-black rounded-[8.78px] bg-white text-[#434343] font-inter text-[16px] md:text-[16px]"
+                className="w-full py-[12px] px-[16px] md:py-[17.56px] md:px-[23.41px] border-[1.46px] border-black rounded-[8.78px] bg-white text-[#434343] font-inter text-[16px] md:text-[23.41px]"
               />
             </div>
             <div className="flex-1">
@@ -97,7 +97,7 @@ const Form = () => {
                 value={formData.phoneNumber}
                 onChange={handleChange}
                 placeholder="+234 (555) 000-0000"
-                className="flex-1 py-2 ml-4 bg-white text-[#434343] font-inter text-[16px] md:text-[23.41px] rounded-r-md focus:outline-none"
+                className="flex-1 py-2 ml-4 bg-white w-10 text-[#434343] font-inter text-[16px] md:text-[23.41px] rounded-r-md focus:outline-none"
               />
             </div>
           </div>
