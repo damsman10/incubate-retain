@@ -62,7 +62,7 @@ const Aside = () => {
 
 
               <div className="bottom course-includes shadow-bottom h-[25.4rem] bg-[#F9F9FF] rounded-[10px] pt-[20px] pl-[30px]">
-                <div className="inner w-[22.6rem] h-[22.8rem] flex flex-col gap-[38px]">
+                <div className="inner w-[22.6rem] h-[22.8rem] flex flex-col gap-[35px]">
                   <h1 className='font-nexa font-700 text-[30px] leading-[37.5px]'>This course includes</h1>
                 
                   <div className="materials flex flex-col gap-[18px]">

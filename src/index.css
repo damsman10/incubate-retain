@@ -6,3 +6,10 @@
     padding: 0;
     margin: 0;
 }
+
+.custom-checkbox {
+    width: 29.3px; 
+    height: 29.3px;
+    border-radius: 8.78px;
+    border: 1px solid #D0D5DD;
+  }
