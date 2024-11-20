@@ -22,6 +22,7 @@ const Home = () => {
         name = "Tech Sales"
         width= "w-[24rem]"
         details = "Join the Revenue Talent Incubation (RETAIN) program and learn all you need to become a tech expert with the help of our experienced instructors."
+        to="/program/tech-sales"
         />
 
         <Program 
@@ -30,12 +31,14 @@ const Home = () => {
         details = "Join the Revenue Talent Incubation - RETAIN program and learn all you need to become a tech expert with the help of our experienced instructors."
         width = "w-[24rem]"
         mobileSize = "w-[10rem]"
+        to="/program/financial-management"
         />
 
         <Program 
         img = {pdesign}
         name = "Product Design"
         details = "Join the Revenue Talent Incubation - RETAIN program and learn all you need to become a tech expert with the help of our experienced instructors."
+        to="/program/product-design"
         />
         
         <Program 
@@ -43,6 +46,7 @@ const Home = () => {
         name = "Product Marketing"
         details = "Join the Revenue Talent Incubation - RETAIN program and learn all you need to become a tech expert with the help of our experienced instructors."
         width = "25rem"
+        to="/program/product-marketing"
         />
 
         <Program 
@@ -50,6 +54,7 @@ const Home = () => {
         name = "Customer Success"
         details = "Join the Revenue Talent Incubation - RETAIN program and learn all you need to become a tech expert with the help of our experienced instructors."
         width = "25rem"
+        to="/program/customer-success"
         />
 
         <Program 
@@ -57,10 +62,13 @@ const Home = () => {
         name = "Graphic Design"
         details = "Join the Revenue Talent Incubation - RETAIN program and learn all you need to become a tech expert with the help of our experienced instructors."
         width = "25rem"
+        to="/program/graphic-design"
         />
+        
+        <div className="faq mt-20">
+          <FAQ />
+        </div>
 
-
-        <FAQ />
 
     </div>
   )

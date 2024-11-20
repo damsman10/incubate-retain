@@ -1,7 +1,6 @@
-import React from 'react';
 import Button from './Button';
 
-const Program = ({ img, name, details }) => {
+const Program = ({ img, name, details, to }) => {
   return (
     <div className='mt-8'>
       <div className="top">
@@ -28,6 +27,7 @@ const Program = ({ img, name, details }) => {
             text="Click to Enroll"
             bgColor="bg-deepBlue"
             color="text-white"
+            to={to} 
           />
         </div>
       </div>
