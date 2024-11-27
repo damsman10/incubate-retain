@@ -73,6 +73,10 @@
     font-family: 'Raleway';
     src: url('./fonts/Raleway-VariableFont_wght.ttf') format('truetype');
    }
+   @font-face {
+    font-family: 'Poppins';
+    src: url('./fonts/Poppins/Poppins-Regular.ttf') format('truetype');
+   }
 
 
 

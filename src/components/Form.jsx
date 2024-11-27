@@ -1,8 +1,25 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import axios from 'axios';
-
+import LearningPathAPI from './LearningPathAPI';
+import Modal from './Modal';
 
 const Form = () => {
+  const [learningPath, setLearningPath] = useState([]);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const response = await LearningPathAPI();
+      const data = response.data;
+
+      const names = data.map((item) => item.education_name);
+      setLearningPath(names);
+    };
+    fetchData();
+  }, [])
+  
+
+
   const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
@@ -105,7 +122,8 @@ const Form = () => {
         marketingConsent: false,
       });
 
-      alert ("Form submitted successfully!");
+      // alert ("Form submitted successfully!");
+      setIsModalOpen(true);
 
     } catch (error) {
       if (error.response) {
@@ -117,6 +135,10 @@ const Form = () => {
       }
     }
     
+  };
+
+  const handleModalClose = () => {
+    setIsModalOpen(false);
   };
 
   return (
@@ -292,12 +314,15 @@ const Form = () => {
               className="w-full py-[12px] px-[16px] md:py-[17.56px] md:px-[23.41px] border-[1.46px] border-black rounded-[8.78px] bg-white text-[#434343] font-inter text-[16px] md:text-[23.41px]"
             >
               <option value="">Select learning path</option>
-              <option value="Tech sales">Tech sales</option>
+              {learningPath.map((name, index) => (
+                <option key={index} value={name}>{name}</option>
+              ))}
+              {/* <option value="Tech sales">Tech sales</option>
               <option value="Product design">Product design</option>
               <option value="Financial management">Financial management</option>
               <option value="Product marketing">Product marketing</option>
               <option value="Customer success">Customer success</option>
-              <option value="Graphic design">Graphic design</option>
+              <option value="Graphic design">Graphic design</option> */}
             </select>
             {errors.learningPath && <p className="text-red-500 text-sm">{errors.learningPath}</p>}
           </div>
@@ -362,7 +387,10 @@ const Form = () => {
           </button>
         </form>
       </div>
+
+      <Modal isOpen={isModalOpen} onClose={handleModalClose} />
     </div>
+    
   );
 };
 

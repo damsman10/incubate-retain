@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: Poppins;
+  src: url(./fonts/Poppins/Poppins-Regular.ttf);
+}
 * {
     padding: 0;
     margin: 0;
@@ -9,6 +13,15 @@
 
 body {
     overflow-x: hidden;
+  }
+
+  select {
+    font-family: 'Inter', sans-serif;
+  }
+
+  option {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
   }
 
 .custom-checkbox {

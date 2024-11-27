@@ -21,7 +21,8 @@ export default {
           nexa: ['Nexa', 'sans-serif'],
           spaceGrotesk: ['Space Grotesk', 'sans-serif'],
           inter: ['Inter', 'sans-serif'],
-          raleway: ['Raleway', 'sans-serif']
+          raleway: ['Raleway', 'sans-serif'],
+          poppins: ['Poppins', 'sans-serif']
       },
     },
   },
