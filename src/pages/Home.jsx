@@ -26,6 +26,22 @@ const Home = () => {
         />
 
         <Program 
+        img = {pmarketing}
+        name = "Product Marketing"
+        details = "Join the Revenue Talent Incubation - RETAIN program and learn all you need to become a tech expert with the help of our experienced instructors."
+        width = "25rem"
+        to="/program/product-marketing"
+        />
+
+        <Program 
+        img = {csuccess}
+        name = "Customer Success"
+        details = "Join the Revenue Talent Incubation - RETAIN program and learn all you need to become a tech expert with the help of our experienced instructors."
+        width = "25rem"
+        to="/program/customer-success"
+        />
+
+        <Program 
         img = {management}
         name = "Financial Management"
         details = "Join the Revenue Talent Incubation - RETAIN program and learn all you need to become a tech expert with the help of our experienced instructors."
@@ -41,21 +57,7 @@ const Home = () => {
         to="/program/product-design"
         />
         
-        <Program 
-        img = {pmarketing}
-        name = "Product Marketing"
-        details = "Join the Revenue Talent Incubation - RETAIN program and learn all you need to become a tech expert with the help of our experienced instructors."
-        width = "25rem"
-        to="/program/product-marketing"
-        />
-
-        <Program 
-        img = {csuccess}
-        name = "Customer Success"
-        details = "Join the Revenue Talent Incubation - RETAIN program and learn all you need to become a tech expert with the help of our experienced instructors."
-        width = "25rem"
-        to="/program/customer-success"
-        />
+        
 
         <Program 
         img = {gdesign}
