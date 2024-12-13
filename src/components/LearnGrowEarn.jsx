@@ -10,7 +10,7 @@ const LearnGrowEarn = () => {
         </h1>
 
         <p className='text-[1.13rem] md:text-[1.875rem] font-nexa mt-[20px] md:mt-[40px] leading-[30px] md:leading-[36px] text-[#191C20]'>
-          Kick start your career with the RETAIN program! Get the skills you need and a guaranteed paid internship with earnings between N70,000 to N150,000 montly.
+          Kick start your career with the RETAIN program! Get the skills you need and a guaranteed paid internship with earnings between N70,000 to N150,000 monthly.
         </p>
         <br />
 
