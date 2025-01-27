@@ -9,14 +9,14 @@ const testimonials = [
     {
         image: retimg,
         text: "The RETAIN program was a defining platform for me. I learned to develop my skills, understood team spirit and also cultivated a culture of experience.",
-        name: "Mr Name",
+        name: "Joseph Ifedayo",
         company: "Software Engineer - IBM",
     },
     {
         image: girlpic,
-        text: "Amazing service and support. I can't imagine doing business without it.",
-        name: "John Smith",
-        company: "Founder of Company Y",
+        text: "Amazing training and facilitators. Without this RETAIN Program, I never would have been well eqipped to run my business.",
+        name: "Angela",
+        company: "CEO Angela Couture",
     },
 ];
 
@@ -37,24 +37,24 @@ const TestimonialScroll = () => {
 
     return (
         <div className="relative">
-            <div className="flex flex-col sm:flex-row sm:justify-start sm:gap-32 sm:h-[22.1rem] px-4 sm:px-8 py-8 sm:py-16">
+            <div className="flex flex-col sm:flex-row sm:justify-start sm:gap-32 sm:h-[22.1rem] sm:px-8 py-8 sm:py-16">
                 
-                <div className="left w-2/5 sm:w-[20.5rem] h-[15rem] sm:h-[22.1rem] bg-cover bg-center rounded-[16px]"
+                <div className="left w-[12.5rem] h-[12.5rem] sm:w-[20.5rem] sm:h-[22.1rem] bg-cover bg-center rounded-[16px] mb-8 sm:mb-0"
                     style={{ backgroundImage: `url(${testimonials[currentIndex].image})` }} />
                 
                 
-                <div className="right w-3/5 space-y-4 sm:space-y-[32px] text-center sm:text-left">
-                    <div className="stars flex justify-center sm:justify-start gap-1 items-center">
+                <div className="right sm:w-3/5 space-y-5 sm:space-y-[32px] text-left">
+                    <div className="stars flex justify-start gap-1 items-center">
                         <img src={star} alt="star" />
                         <img src={star} alt="star" />
                         <img src={star} alt="star" />
                         <img src={star} alt="star" />
                         <img src={star} alt="star" />
                     </div>
-                    <p className="font-bold text-[1.25rem] sm:text-[1.75rem] sm:h-[7rem]">{testimonials[currentIndex].text}</p>
+                    <p className="font-bold text-[1.25rem] sm:text-[1.75rem] h-[12rem] sm:h-[7rem] ">{testimonials[currentIndex].text}</p>
                     <div className="author space-y-2">
-                        <p className="font-bold text-[1rem] sm:text-[18px] font-clash text-[#101828]">- {testimonials[currentIndex].name}</p>
-                        <p className="font-semibold text-[0.875rem] sm:text-[16px] font-clash text-[#667085]">{testimonials[currentIndex].company}</p>
+                        <p className="font-bold text-[18px] font-clash text-[#101828]">- {testimonials[currentIndex].name}</p>
+                        <p className="font-semibold text-[16px] font-clash text-[#667085]">{testimonials[currentIndex].company}</p>
                     </div>
                     <div className="buttons flex justify-center sm:justify-start gap-[16px]">
                         <button className="w-[48px] h-[48px] border-2 border-[#E4E7EC] bg-white rounded-[28px] flex justify-center items-center" 
