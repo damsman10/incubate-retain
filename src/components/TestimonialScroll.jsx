@@ -1,6 +1,8 @@
 import { useState } from "react";
 import Ezihe from '../assets/ezihe.jpg'
-import girlpic from '../assets/testi-girl.jpg'
+import Israel from '../assets/Israel.png'
+import Josephine from '../assets/Josephine.jpg'
+import Esther from '../assets/Esther.png'
 import star from '../assets/Star.svg'
 import lefticon from '../assets/lefticon.svg'
 import righticon from '../assets/righticon.svg'
@@ -8,15 +10,27 @@ import righticon from '../assets/righticon.svg'
 const testimonials = [
     {
         image: Ezihe,
-        text: "I successfully completed Salesplat Technologies' Customer Success course. The 3-month training and 6-month paid internship exceeded my expectations, providing hands-on experience and invaluable knowledge that set me up for success and career growth. I'm grateful for this opportunity and highly recommend Salesplat Technologies for anyone looking to break into tech.",
+        text: "I completed the Customer Success course, which included 3 months of training followed by a 6-month paid internship. The experience exceeded my expectations and played a pivotal role in setting me up for career growth. I highly recommend it to anyone looking to break into tech.",
         name: "Ezihe Daberechi",
         company: "RETAIN Program graduate",
     },
     {
-        image: girlpic,
-        text: "Amazing training and facilitators. Without this RETAIN Program, I never would have been well eqipped to run my business.",
-        name: "Angela",
-        company: "CEO Angela Couture",
+        image: Israel,
+        text: "Learning a tech skill has always been my desire but I was afraid of doing coding... and I recommend RETAIN program to everybody like me looking to learn a tech skill that do not involve coding.",
+        name: "Israel Blessed",
+        company: "RETAIN Program graduate",
+    },
+    {
+        image: Josephine,
+        text: "I feel ready for my career as a sales professional now as I'm confident in handling any sales challenge. It's a great program for anyone starting in tech sales.",
+        name: "Josephine",
+        company: "RETAIN Program graduate",
+    },
+    {
+        image: Esther,
+        text: "I was able to apply the skills and knowledge I acquired during the program in a real-world setting and received valuable, constructive feedback from my supervisors.",
+        name: "Esther Titilayo",
+        company: "RETAIN Program graduate",
     },
 ];
 
@@ -51,7 +65,7 @@ const TestimonialScroll = () => {
                         <img src={star} alt="star" />
                         <img src={star} alt="star" />
                     </div>
-                     <p className="font-bold text-[1.25rem] sm:text-[1.75rem]  ">{testimonials[currentIndex].text}</p> {/*h-[12rem] sm:h-[7rem] */}
+                     <p className="font-bold text-[1.25rem] sm:text-[1.75rem] h-[15rem] sm:h-[18rem] */">{testimonials[currentIndex].text}</p>
                     <div className="author space-y-2">
                         <p className="font-bold text-[18px] font-clash text-[#101828]">- {testimonials[currentIndex].name}</p>
                         <p className="font-semibold text-[16px] font-clash text-[#667085]">{testimonials[currentIndex].company}</p>
